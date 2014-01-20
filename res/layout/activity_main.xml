@@ -10,16 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <EditText
-        android:id="@+id/editText1"
+    <TextView
+        android:id="@+id/textAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:gravity="right"
-        android:inputType="number|numberSigned|numberDecimal" >
+        android:text="@string/n0"
+        android:textSize="30sp" />
 
-        <requestFocus />
-    </EditText>
+    <TextView
+        android:id="@+id/textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="@string/n0"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -37,64 +42,70 @@
 	            android:id="@+id/button7"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_7"
+	            android:text="@string/n7"
 	            android:onClick="onNumButtonClick" />
 
 	        <Button
 	            android:id="@+id/button8"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_8" 
+	            android:text="@string/n8" 
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button9"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_9"
+	            android:text="@string/n9"
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button4"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_4"
+	            android:text="@string/n4"
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button5"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_5"
+	            android:text="@string/n5"
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button6"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_6"
+	            android:text="@string/n6"
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button1"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_1"
+	            android:text="@string/n1"
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button2"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_2"
+	            android:text="@string/n2"
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button3"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_3"
+	            android:text="@string/n3"
 	            android:onClick="onNumButtonClick" />
 	        <Button
 	            android:id="@+id/button0"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_0"
+	            android:text="@string/n0"
 	            android:onClick="onNumButtonClick" />
-	        	        
+	        <Button
+	            android:id="@+id/buttonDot"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/dot"
+	            android:onClick="onNumButtonClick" />
+	        	        	        
 	    </GridLayout>
 	    
 	    <LinearLayout
@@ -108,27 +119,32 @@
 	            android:id="@+id/button_plus"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_plus" />
+	            android:text="@string/op_plus"
+	            android:onClick="onOperatorButtonClick" />
 	        <Button
 	            android:id="@+id/button_minus"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_minus" />
+	            android:text="@string/op_minus"
+	            android:onClick="onOperatorButtonClick" />
 	        <Button
 	            android:id="@+id/button_multiply"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_multiply" />
+	            android:text="@string/op_multiply"
+	            android:onClick="onOperatorButtonClick" />
 	        <Button
 	            android:id="@+id/button_divide"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_divide" />
+	            android:text="@string/op_divide"
+	            android:onClick="onOperatorButtonClick" />
 	        <Button
 	            android:id="@+id/button_equal"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:text="@string/btn_equal" />
+	            android:text="@string/op_equal"
+	            android:onClick="onEqualButtonClick" />
 	        	        	        	        	        
 	    </LinearLayout>
     
