@@ -20,6 +20,7 @@
     <string name="op_divide">/</string>
     <string name="op_equal">=</string>
     <string name="dot">.</string>
+    <string name="about">About</string>
     
 
 </resources>

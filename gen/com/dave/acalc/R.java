@@ -25,7 +25,6 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout1=0x7f080000;
-        public static final int action_settings=0x7f080013;
         public static final int button0=0x7f08000c;
         public static final int button1=0x7f080009;
         public static final int button2=0x7f08000a;
@@ -42,6 +41,7 @@ public final class R {
         public static final int button_minus=0x7f08000f;
         public static final int button_multiply=0x7f080010;
         public static final int button_plus=0x7f08000e;
+        public static final int item_about=0x7f080013;
         public static final int textAnswer=0x7f080001;
         public static final int textInput=0x7f080002;
     }
@@ -49,9 +49,10 @@ public final class R {
         public static final int activity_main=0x7f030000;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main_menu=0x7f070000;
     }
     public static final class string {
+        public static final int about=0x7f050013;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int dot=0x7f050012;
