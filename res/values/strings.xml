@@ -21,6 +21,6 @@
     <string name="op_equal">=</string>
     <string name="dot">.</string>
     <string name="about">About</string>
-    
+    <string name="title_activity_about">About</string>
 
 </resources>

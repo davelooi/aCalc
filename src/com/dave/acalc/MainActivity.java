@@ -1,9 +1,8 @@
 package com.dave.acalc;
 
-
-import java.util.HashMap;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,18 +14,14 @@ public class MainActivity extends Activity {
 	private StringBuilder currentString = new StringBuilder();
 	private double numInput;
 	private double numAnswer;
-	private HashMap<String, Operation> operations = new HashMap<String, Operation>();
+	private Operations operations;
 	private Operation op;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		operations.put("+", new Addition());
-		operations.put("-", new Subtraction());
-		operations.put("*", new Multiplication());
-		operations.put("/", new Division());
+		operations = new Operations();
 	}
 
 	@Override
@@ -41,7 +36,8 @@ public class MainActivity extends Activity {
 	    // Handle item selection
 	    switch (item.getItemId()) {
 	        case R.id.item_about:
-//	            newGame();
+	        	Intent intent = new Intent(this, AboutActivity.class);
+	        	startActivity(intent);
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
@@ -60,7 +56,7 @@ public class MainActivity extends Activity {
 	public void onOperatorButtonClick(View view) {
 		Button button = (Button) view;
 		String operator = button.getText().toString();
-		op = operations.get(operator);
+		op = operations.getOperation(operator);
 		
 		numAnswer = numInput;
 		clearInput();
